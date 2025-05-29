@@ -1,8 +1,8 @@
 <?php
-    $itens [
+    $itens = [
         ['href' => 'https://www.instagram.com/andressafreitaass?igsh=Ymd1a3FsMXYycTZ5&utm_source=qr', 'src' => '/img/instagram-icon.png', 'alt' => 'Instagram Logo'],
         ['href' => 'https://br.linkedin.com/in/andressafreitasqa', 'src' => '/img/instagram-icon.png', 'alt' => 'Linkedin Logo'],
-    ]
+    ];
 ?>
 
 <main class="mx-auto max-w-screen-lg min-h-20 px-3 py-6">
