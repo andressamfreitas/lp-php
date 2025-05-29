@@ -17,7 +17,7 @@
                     <ul class="flex font-small gap-y-3 mt-10 text-slate-400">
                         <?php foreach ($itens as $item): ?>
                             <li>
-                                <a href="<?= $item['href'] ?> target="_blank">
+                                <a href="<?= $item['href'] ?>" target="_blank">
                                 <img class="h-10 hover:animate-bounce rounded-md px-2 py-2", src="<?=$item['src']?>" alt="<?=$item['alt']?>" />
                                 </a>
                             </li>

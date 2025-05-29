@@ -9,8 +9,9 @@
     </head>
     <body class="bg-slate-950 text-gray-400">
         <?php include('./components/header.php'); ?>
-
+    
         <main class="mx-auto max-w-screen-lg min-h-20 px-3 py-6">
+<<<<<<< HEAD
             <section class="flex gap-x-3 mt-3 justify-between">
                 <div class="w-2/3">
                     <h1 class="text-2xl font-bold"> Oi, meu nome é Andressa.</h1>
@@ -36,65 +37,15 @@
                         <img class="rounded-lg -mt-6 hover:animate-pulse" src="https://lh3.googleusercontent.com/a/ACg8ocLqbtOSy-Snx4IhyP1R6do0Ap9gb0XyT_hgi3gNHd7EjRRVI2tV=s260-c-no" alt="foto de perfil" >
                     </div>
             </section>
+=======
+            <?php include('./components/hero.php'); ?>
+
+            
+>>>>>>> main
             <section class="space-y-3 py-6" id="projetos"> 
                 <h2 class="text-2xl font-bold">Meus projetos</h2>
-                <div class="bg-slate-800 rounded-lg px-4 py-3 flex items-center">
-                    <div class="w-1/5">Foto do projeto</div>
-                    <div class="w-4/5 space-y-3">
-                        <div class="flex gap-3 justify-between">
-                            <h3 class="font-semibold text-xl">
-                                Projeto 1 <spam class="text-sm opacity-50"> (Finalizado em 2025)</spam></h3>
-                        <div class="flex gap-1 font-semibold text-xs">
-                            <spam class="bg-yellow-500 text-yellow-900 rounded-md px-3 py-2 ">PHP </spam>
-                            <spam class="bg-fuchsia-500 text-fuchsia-900 rounded-md px-3 py-2 ">JS </spam>
-                            <spam class="bg-sky-500 text-sky-900 rounded-md px-3 py-2 ">CSS </spam>
-                            <spam class="bg-lime-500 text-lime-900 rounded-md px-3 py-2 ">Tailwind </spam>
-                        </div>
-                </div>
-                <p class="leading-6">
-                    Lorem ipsum dolor, sit amet consectetur adipiscign elit.
-                    Alias, quas! Nos voluptatem vero dignissimos nemo magnam iusto nam...
-                </p>
-            </section>
-            <section class="space-y-3 py-6"> 
-                <div class="bg-slate-800 rounded-lg px-4 py-3 flex items-center">
-                    <div class="w-1/5">Foto do projeto</div>
-                    <div class="w-4/5 space-y-3">
-                        <div class="flex gap-3 justify-between">
-                            <h3 class="font-semibold text-xl">
-                                Projeto 2 <spam class="text-sm opacity-50"> (Finalizado em 2025)</spam></h3>
-                        <div class="flex gap-1 font-semibold text-xs">
-                            <spam class="bg-yellow-500 text-yellow-900 rounded-md px-3 py-2 ">PHP </spam>
-                            <spam class="bg-fuchsia-500 text-fuchsia-900 rounded-md px-3 py-2 ">JS </spam>
-                            <spam class="bg-sky-500 text-sky-900 rounded-md px-3 py-2 ">CSS </spam>
-                            <spam class="bg-lime-500 text-lime-900 rounded-md px-3 py-2 ">Tailwind </spam>
-                        </div>
-                </div>
-                <p class="leading-6">
-                    Lorem ipsum dolor, sit amet consectetur adipiscign elit.
-                    Alias, quas! Nos voluptatem vero dignissimos nemo magnam iusto nam...
-                </p>
-            </section>
-             <section class="space-y-3 py-6"> 
-                <div class="bg-slate-800 rounded-lg px-4 py-3 flex items-center">
-                    <div class="w-1/5">Foto do projeto</div>
-                    <div class="w-4/5 space-y-3">
-                        <div class="flex gap-3 justify-between">
-                            <h3 class="font-semibold text-xl">
-                                Projeto 3 <spam class="text-sm opacity-50"> (Finalizado em 2025)</spam></h3>
-                        <div class="flex gap-1 font-semibold text-xs">
-                            <spam class="bg-yellow-500 text-yellow-900 rounded-md px-3 py-2 ">PHP </spam>
-                            <spam class="bg-fuchsia-500 text-fuchsia-900 rounded-md px-3 py-2 ">JS </spam>
-                            <spam class="bg-sky-500 text-sky-900 rounded-md px-3 py-2 ">CSS </spam>
-                            <spam class="bg-lime-500 text-lime-900 rounded-md px-3 py-2 ">Tailwind </spam>
-                        </div>
-                </div>
-                <p class="leading-6">
-                    Lorem ipsum dolor, sit amet consectetur adipiscign elit.
-                    Alias, quas! Nos voluptatem vero dignissimos nemo magnam iusto nam...
-                </p>
-            </section>
-        </main>
+
+                <?php include('./components/projetos.php'); ?>
 
         <footer class="mx-auto max-w-screen-lg min-h-20">
             <div class="border-t border-gray-600 px-3 pt-3 text-gray-400 text-sm">
