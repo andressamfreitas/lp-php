@@ -6,6 +6,8 @@ $livros = [
     ['id' =>4, 'titulo' => 'Comece pelo porque', 'autor' => 'Simon Sinek', 'descricao' => 'Como grandes líderes inspiram pessoas e equipes a agir'],
     ['id' =>5, 'titulo' => 'O poder do hábito', 'autor' => 'Charles Duhigg', 'descricao' => 'Por que fazemos o que fazemos na vida e nos negócios'],
     ['id' =>6, 'titulo' => 'Pipeline de liderança', 'autor' => 'Ram Charan', 'descricao' => 'O desenvolvimento de líderes como diferencial competitivo'],
+    ['id' =>7, 'titulo' => 'Morra sem nada', 'autor' => 'Bill Perkins', 'descricao' => 'Aproveite ao máximo sua vida e seu dinheiro e morra zerado'],
+    ['id' =>8, 'titulo' => 'Hábitos Atômicos', 'autor' => 'James Clear', 'descricao' => 'um Método Fácil e Comprovado de Criar Bons Hábitos e se Livrar dos Maus'],
 ]
 
 ?>
