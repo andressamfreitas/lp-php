@@ -34,38 +34,36 @@ $projetos = [
     ]
 ]
 ?>
-<? foreach ($projetos as $projetos) : ?>
-
-
-<div class="bg-slate-800 rounded-lg px-4 py-3 flex items-center">
-                    <div class="w-1/5 flex items-center justify-middle">
-                        <img src="<?=$projeto['img']?>" class="h-10" />
-                        
-                    </div>
-                    <div class="w-4/5 space-y-3">
-                        <div class="flex gap-3 justify-between">
-                            <h3 class="font-semibold text-xl">
-                                <?php if($projeto['finalizado']): ?>ok<? endif; ?>
-                                <?=$projeto['titulo']?> 
-                                <?php if($projeto['finalizado']): ?>
-                                <spam class="text-sm opacity-50">(Finalizado em <?=$projeto['ano']?>)</spam>
-                                <?php else: ?>
-                                     <spam class="text-sm opacity-50">(em desenvolvimento)</spam>
-                                <?php endif; ?>
-                            </h3>
-                            <div class="space-x-1">
-                                <?php 
-                                $colors = ['fuchsia', 'lime', 'sky', 'yellow'];
-                                foreach ($colors as $posicao => $language):
-                                foreach ($projetos['stack'] as $language): ?>                            
-                            <spam class="bg-<?=$colors[$posicao]?>yellow-500 text-<?=$colors[$posicao]?>yellow-900 rounded-md px-3 py-2 "> 
-                                <?=$language?>
-                            </spam>                            
-                            <? endforeach; ?>
-                        </div>
+<?php foreach ($projetos as $projeto) : ?>
+    <div class="bg-slate-800 rounded-lg px-4 py-3 flex items-center mb-4">
+        <div class="w-1/5 flex items-center justify-center">
+            <img src="<?= $projeto['img'] ?>" class="h-10" alt="Imagem do projeto" />
+        </div>
+        <div class="w-4/5 space-y-3">
+            <div class="flex gap-3 justify-between items-center">
+                <h3 class="font-semibold text-xl text-white">
+                    <?= $projeto['titulo'] ?>
+                    <?php if ($projeto['finalizado']) : ?>
+                        <span class="text-sm opacity-50">(Finalizado em <?= $projeto['ano'] ?>)</span>
+                    <?php else : ?>
+                        <span class="text-sm opacity-50">(Em desenvolvimento)</span>
+                    <?php endif; ?>
+                </h3>
+                <div class="flex space-x-1">
+                    <?php
+                    $colors = ['fuchsia', 'lime', 'sky', 'yellow'];
+                    foreach ($projeto['stack'] as $index => $language) :
+                        $color = $colors[$index % count($colors)];
+                    ?>
+                        <span class="bg-<?= $color ?>-500 text-<?= $color ?>-900 rounded-md px-3 py-1 text-sm">
+                            <?= $language ?>
+                        </span>
+                    <?php endforeach; ?>
                 </div>
-                <p class="leading-6">
-                    <?=$projeto['descricao']?>                    
-                </p>
-            </section>
-        </main>
+            </div>
+            <p class="leading-6 text-white">
+                <?= $projeto['descricao'] ?>
+            </p>
+        </div>
+    </div>
+<?php endforeach; ?>
