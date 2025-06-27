@@ -1,5 +1,7 @@
 
-<?=$livro['titulo']?>
+<?php
+$livro['titulo'];
+?>
         <div class="p-2 rounded border-stone-900 border-2">
                     <div class="flex">
                     <div class="w-1/3">imagem</div>
