@@ -1,7 +1,16 @@
 <?php
+echo 'sempre cai no index.php';
 
-require 'dados.php';
+$controller = 'index';
+// echo "<pre>";
+// var_dump($_SERVER);
+// echo "</pre>";
 
-$view = "index";
-require 'views/template/app.php';
+if (isset($_SERVER['PATH_INFO'])) {
+    $controller =str_replace('/','', $_SERVER['PATH_INFO']);
+}
+// isset = verifica se a chave existe no array.
+
+
+require "controllers/{$controller}.controller.php";
 ?>
